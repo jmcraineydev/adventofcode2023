@@ -3,10 +3,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "00.circle")
                 .imageScale(.large)
+                .frame(width: 40, height: 40)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Day 00")
+        }.onTapGesture {
+            Day00View()
         }
     }
 }
